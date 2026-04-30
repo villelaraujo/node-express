@@ -1,0 +1,14 @@
+<section class="main-wrapper">
+  <form class="login-form" method="post" action="/login">
+    <div class="login-rows">
+      <div>Email: </div><input class="input" type="text" name="email" required oninvalid="this.setCustomValidity('Please enter your email')" oninput="this.setCustomValidity('')"/>
+    </div>
+    <div class="login-rows">
+      <div>Password: </div><input class="input" type="password" name="password" required/>
+    </div>
+    <div class="login-rows">
+      <button class="btn-default" type="submit">Sign in</button><a href="/newaccount" class="btn-default">Create Account</a>
+    </div>
+  </form>
+</section>
+<script src="public/frontend/login.js"></script>

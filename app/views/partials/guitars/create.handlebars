@@ -1,0 +1,16 @@
+<section class="main-wrapper">
+  <h1 class="subtitle">{{h1title}}</h1>
+  <div class="divider"></div>
+  <form class="login-form" method="post" action="{{action}}">
+    <div class="login-rows">
+      <div>Make: </div><input class="input" type="text" name="guitar_make" value="{{guitar.make}}" />
+    </div>
+    <div class="login-rows">
+      <div>Model: </div><input class="input" type="text" name="guitar_model" value="{{guitar.model}}" />
+    </div>
+    <div>
+      <button class="btn-default" type="submit">{{button}}</button>
+    </div>
+  </form>
+</section>
+<a class="btn-default" href="/guitars">Cancel</a>

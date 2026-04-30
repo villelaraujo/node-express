@@ -1,0 +1,10 @@
+<h2 class="list-title">{{h2title}}</h2>
+<section class="main-wrapper">
+  <ul>
+    {{#each guitars}}
+    <li class="guitar-list"><a class="guitar-link" href="/guitars/{{this.id}}">{{this.make}} {{this.model}}</a></li>
+    {{/each}}
+  </ul>
+</section>
+<a class="btn-default" href="/guitars/create">Create guitar</a>
+<a class="btn-default" href="/logout">Logout</a>

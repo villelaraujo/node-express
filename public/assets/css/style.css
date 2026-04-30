@@ -1,0 +1,146 @@
+body {
+  cursor: default;
+  user-select: none;
+  --bg-color: linear-gradient(0deg, rgb(37, 52, 77) 0%, rgb(36, 61, 104) 100%);
+  --wrapper-color: rgb(235, 235, 235);;
+  --window-bg: linear-gradient(0deg, rgb(255, 255, 255) 0%, rgb(240, 240, 240) 100%);
+  --btn-default: rgb(47, 110, 161);
+  --btn-default-mo: rgb(76, 157, 250);
+  --title: rgb(0, 32, 80);
+  --subtitle: rgb(71, 118, 189);
+  --shadow: 0px 0px 25px rgba(0,0,0,0.4);
+  font-size: 2rem;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  background-image: var(--bg-color);
+}
+div.center-screen {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+section.app-window {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  max-width: 500px;
+  min-width: 450px;
+  height: 800px;
+  background: var(--window-bg);
+  box-shadow: var(--shadow);
+  border-radius: 30px;
+  padding: 25px 0px;
+}
+div.title {
+  color: var(--title);
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 3rem;
+  font-weight: bolder;
+  margin-bottom: 50px;
+  padding: 3px 10px;
+  border: 2px solid rgb(0, 32, 80);
+  border-radius: 5px;
+}
+section.main-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: var(--wrapper-color);
+  padding: 40px;
+  margin: 30px 0;
+}
+.list-title {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  color: rgb(175, 175, 175);
+}
+.subtitle{
+  color: var(--subtitle);
+  margin-bottom: 10px;
+}
+.login-form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: black;
+}
+.login-rows {
+  display: flex;
+  justify-content: space-between;
+  min-width: 340px;
+  font-size: 22px;
+  font-weight: bold;
+  padding: 10px;
+}
+.login-tooltip{
+  font-size: 13px;
+  color: gray;
+}
+.error-msg{
+  padding: 10px 50px;
+  margin-bottom: 20px;
+  font-weight: bold;
+  font-size: 16px;
+  color: rgb(255, 118, 118);
+  background-color: rgb(226, 189, 189);
+  border: 1px solid rgb(255, 118, 118);
+  border-radius: 5px;
+}
+.input {
+  height: 28px;
+  width: 220px;
+  padding: 0 10px;
+  margin-left: 8px;
+  border: 2px solid transparent;
+  border-radius: 15px;
+  transition: 200ms;
+}
+.input:focus {
+  outline: none;
+  border: 2px solid var(--btn-default-mo);
+}
+.btn-default {
+  display: flex;
+  cursor: pointer;
+  width: fit-content;
+  padding: 10px 20px;
+  margin: 5px;
+  border: none;
+  border-radius: 5px;
+  background-color: var(--btn-default);
+  color: rgb(255, 255, 255);
+  font-size: 18px;
+  font-weight: bold;
+  align-items: center;
+  transition: 300ms;
+}
+.btn-default:hover {
+  background-color: var(--btn-default-mo);
+}
+ul {
+  padding-inline-start: 0px;
+  margin: 0 60px 0 60px;
+  list-style-type: none;
+  text-decoration: none;
+}
+.guitar-list {
+  padding: 4px 5px;
+}
+.guitar-link {
+  transition: 200ms;
+}
+.guitar-link:hover {
+  color: rgb(108, 177, 255);
+}
+a {
+  text-decoration: none;
+  color: var(--title);
+}
+.divider{
+  height: 2px;
+  width: 400px;
+  margin-bottom: 25px;
+  background-color: rgb(214, 214, 214);
+}

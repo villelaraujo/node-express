@@ -1,0 +1,21 @@
+<section class="main-wrapper">
+  <h1 class="subtitle">{{h1title}}</h1>
+  <div class="divider"></div>
+  <form class="login-form" method="post" action="/newaccount">
+    <div class="login-rows">
+      <div>Username: </div><input class="input" type="text" name="user"/>
+    </div>
+    <span class="login-tooltip">Username cannot contain special characters</span>
+    <div class="login-rows">
+      <div>Email: </div><input class="input" type="text" name="email"/>
+    </div>
+    <span class="login-tooltip">Your email will not be public</span>
+    <div class="login-rows">
+      <div>Password: </div><input class="input" type="password" name="password"/>
+    </div>
+    <span class="login-tooltip">Password must be at least 6 characters long</span>
+    <div class="login-rows">
+      <button class="btn-default" type="submit">Create</button><a href="/login" class="btn-default">Cancel</a>
+    </div>
+  </form>
+</section>
